@@ -56,6 +56,10 @@
     .menuToggle .nav-links{
         transform: translateY(0%);
 }
+
+.link-box a {
+    font-size: 5rem;
+}
 }
 
 @media(max-width:850px){
@@ -68,6 +72,16 @@ html{
 .deal-img {
     height: 350px;
     background: #efefef;
+}
+.link-wrap .row{
+    flex-direction: column-reverse;
+}
+.link-wrap .col-md-6{
+    width: 100%;
+}
+.link-img {
+    height: 350px;
+    margin-bottom: 20px;
 }
 }
 
@@ -133,6 +147,9 @@ html{
     }
     .link-wrap {
         margin-top: 50px;
+    }
+    .link-img {
+        height: 300px;
     }
 }
 @media(max-width:375px){
