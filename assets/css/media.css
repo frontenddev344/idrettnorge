@@ -92,6 +92,15 @@ html{
     .copy-right .footer-links ul {
         margin-bottom: 0;
     }
+    .cookie-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cookie-content p {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
 }
 @media(max-width:575px){
     .copy-right {

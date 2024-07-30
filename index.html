@@ -10,7 +10,44 @@
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/media.css">
       <title>Hjemmeside</title>
+      <style>
+         .cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
 
+.cookie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-content p {
+    margin: 0;
+    font-size: 14px;
+    width: 75%;
+}
+
+
+
+.cookie-content button {
+    background-color: #033f75;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    width: fit-content;
+}
+      </style>
    </head>
    <body>
       <a id="button"></a>
@@ -301,13 +338,37 @@ heve prestasjonen din. Handle nå og gjør deg klar for din neste seier!
          </div>
        </footer>
       <!-- footer section end here -->
+
+
+    
+      <div class="cookie-popup" id="cookiePopup">
+         <div class="cookie-content">
+             <p>Vi bruker informasjonskapsler for å forbedre brukeropplevelsen din på nettstedet vårt,
+               analysere trafikken på nettstedet og tilpasse innhold. Ved å fortsette å bruke siden vår
+               godtar du bruken av informasjonskapsler. </p>
+             <button id="acceptCookies">Aksepterer</button>
+         </div>
+     </div>
+
  
       <script src="assets/js/jquery-3.7.1.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/custom.js"></script>
       <script>
+         document.addEventListener("DOMContentLoaded", function() {
+    const cookiePopup = document.getElementById('cookiePopup');
+    const acceptCookies = document.getElementById('acceptCookies');
 
+    // Check if the user has already accepted cookies
+    if (!localStorage.getItem('cookiesAccepted')) {
+        cookiePopup.style.display = 'block';
+    }
 
+    acceptCookies.addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        cookiePopup.style.display = 'none';
+    });
+});
       </script>
    </body>
 </html>
