@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); 
-
+html{
+    font-size: 16px;
+}
  *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     word-break: break-all;
 }
  body{
      margin: 0;
@@ -18,20 +21,11 @@
  a{
      text-decoration: none;
 }
- h1, h2, h3, h4, h5, h6{
-    font-family: "DM Sans", sans-serif;
-}
- p{
-    font-family: "DM Sans", sans-serif;
-}
  img{
      width: 100%;
 }
  .container{
      max-width: 1300px;
-}
- .ptb-70{
-     padding: 70px 0;
 }
  .ptb-50{
      padding: 50px 0;
@@ -51,15 +45,13 @@
      background-color: #033f75;
      box-shadow: rgb(0 0 0 / 14%) 0px 0px 15px;
      transition: all 0.5s linear;
-     /* position: fixed; */
-     top: 0;
-     z-index: 999;
 }
 
 
- .site-header.fixed{
-     position: absolute;
+ .fixed-header{
+     position: fixed;
      top: 0;
+     left: 0;
      z-index: 99;
 }
  .site-logo img {
@@ -82,7 +74,7 @@
      color: #fff;
      text-transform: capitalize;
      font-weight: 500;
-     font-size: 16px;
+     font-size: 1rem;
      position: relative;
      display: inline-block;
     
@@ -129,21 +121,21 @@
     align-items: center;
 }
 .banner-text h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #000;
     line-height: 1.1;
     margin-bottom: 10px;
     text-align: center;
 }
 .banner-text p {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     margin-bottom: 0;
     color: #333;
 }
 
 .top-text p {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     color: #333;
 }
@@ -160,7 +152,7 @@
 .news-heading h3 {
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 1.1;
     font-weight: 600;
 }
@@ -199,9 +191,29 @@
 }
 /* news letter section css end */
 
+/* link card section css start */
+.link-box a {
+    font-size: 5.625rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: normal;
+    color: #000;
+    letter-spacing: 7px;
+}
+.link-box a:hover{
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+    
+}
+.link-wrap {
+    margin-top: 50px;
+}
+
+/* link card section css end */
+
 /* top deals section css start */
 .site-heading h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0;
@@ -209,21 +221,27 @@
 }
 .deal-img {
     height: 500px;
+    background: #efefef;
+    overflow: hidden;
+}
+.deal-img:hover img{
+    transform: scale(1.2);
 }
 .deal-img img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    transition: all 0.3s linear;
 }
 .deal-text h3 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #000;
     margin-bottom: 10px;
     line-height: 1.1;
     text-align: center;
 }
 .deal-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
     margin-bottom: 0;
     color: #333;
@@ -275,7 +293,7 @@
 
 
  .footer-links ul li a {
-     font-size: 16px;
+     font-size: 1rem;
      text-transform: capitalize;
      color: #fff;
      display: flex;
@@ -327,6 +345,7 @@
 }
 .copy-right p {
     color: #fff;
+    margin-bottom: 0;
 }
 .copy-right {
     display: flex;
@@ -396,7 +415,7 @@
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 50px;
     color: #fff;
   }
@@ -438,7 +457,7 @@
     width: 20%;
     border-radius: 40px;
     border: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     transition: all 0.3s linear;
 
@@ -478,18 +497,24 @@
     height: 350px;
     overflow: hidden;
 }
+.soccer-img:hover img{
+    transform: scale(1.2);
+
+}
 .soccer-img img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: all 0.3s linear;
+
 }
 .soccer-text h3 a {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #033f75;
     font-weight: 600;
 }
 .soccer-text span {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     display: block;
     line-height: normal;
@@ -499,7 +524,7 @@ a.buy-now {
     margin: 5px 0;
     color: #000;
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     position: absolute;
     bottom: 20px;
@@ -543,5 +568,13 @@ a.buy-now:hover{
 }
 .privacy-wrap{
     margin: 20px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+
+}
+.privacy-wrap p a{
+    font-weight: 500;
+    color: #333;
+    text-decoration: underline;
 }
 /* sub pages css end */

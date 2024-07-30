@@ -1,0 +1,166 @@
+@media(max-width:1200px){
+    html{
+        font-size: 15px;
+    }
+    .site-banner {
+        height: 500px;
+    }
+    .site-banner.sub-banner {
+        height: 350px;
+    }
+}
+
+@media(max-width:992px){
+    .nav-links ul {
+        gap: 20px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .nav-links {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: #033f75;
+        width: 100%;
+        height: 100vh;
+        padding-top: 100px;
+    }
+    .toggle, .close {
+        display: block;
+    }
+    .toggle{
+        font-size: 25px;
+        color: #fff;
+    }
+    .close {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 25px;
+        color: #fff;
+    }
+    .nav-links {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        background-color: #033f75;
+        width: 100%;
+        height: 100vh;
+        padding-top: 100px;
+        transform: translateY(100%);
+        transition: all 0.3s linear;
+}
+    .menuToggle .nav-links{
+        transform: translateY(0%);
+}
+}
+
+@media(max-width:850px){
+html{
+    font-size: 14px;
+}
+.site-banner {
+    height: 450px;
+}
+.deal-img {
+    height: 350px;
+    background: #efefef;
+}
+}
+
+@media(max-width:767px){
+    .banner-wrap {
+        width: 100%;
+        justify-content: center;
+    }
+    .postage-sec {
+        height: 300px;
+    }
+    .footer-logo img {
+        max-width: 250px;
+    }
+    .social-links ul li a i {
+        height: 40px;
+        width: 40px;
+    }
+    .footer-links ul {
+        gap: 20px;
+    }
+    .copy-right .footer-links ul {
+        margin-bottom: 0;
+    }
+}
+@media(max-width:575px){
+    .copy-right {
+        flex-direction: column-reverse;
+    }
+    .footer-links ul {
+        gap: 0px;
+    }
+    .footer-links ul li{
+        padding: 0 10px;
+    }
+    .form-wrap button {
+        width: 25%;
+    }
+    .form-wrap input {
+        width: 80%;
+    }
+    .postage-sec {
+        height: 220px;
+    }
+    .social-links ul {
+        padding-bottom: 0;
+    }
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+    .link-box a {
+        font-size: 3.625rem;
+        letter-spacing: 3px;
+    }
+    .link-wrap {
+        margin-top: 50px;
+    }
+}
+@media(max-width:375px){
+    .form-wrap {
+        border-radius: initial;
+        margin-top: 30px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .form-wrap input {
+        width: 100%;
+        height: 45px;
+        border-radius: 25px;
+    }
+    .form-wrap button {
+        width: 50%;
+        height: 40px;
+        border-radius: 25px;
+    }
+    .site-logo img {
+        max-width: 160px;
+    }
+    .toggle {
+        font-size: 22px;
+    }
+    .footer-logo img {
+        max-width: 220px;
+    }
+    .deal-text {
+        padding: 20px 10px;
+    }
+    .soccer-img {
+        height: 300px;
+    }
+    .site-banner.sub-banner {
+        height: 320px;
+    }
+}
