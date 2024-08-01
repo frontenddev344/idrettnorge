@@ -171,6 +171,7 @@ html{
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+    gap: 4px;
 }
 .form-wrap input {
     height: 100%;
@@ -207,6 +208,7 @@ html{
 }
 .link-wrap {
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 .link-img {
     height: 100%;
@@ -389,7 +391,7 @@ html{
     font-style: normal;
     font-size: 0.9375rem;
     line-height: 50px;
-    color: #fff;
+    color: #000;
   }
   #button:hover {
     cursor: pointer;
@@ -497,7 +499,7 @@ a.buy-now {
     color: #000;
     text-decoration: underline;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     position: absolute;
     bottom: 20px;
     left: auto;
@@ -548,5 +550,8 @@ a.buy-now:hover{
     font-weight: 500;
     color: #333;
     text-decoration: underline;
+}
+.top-text {
+    padding: 0 25px;
 }
 /* sub pages css end */

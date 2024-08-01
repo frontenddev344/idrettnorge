@@ -151,6 +151,9 @@ html{
     .link-img {
         height: 300px;
     }
+    .top-text {
+        padding: 0 5px;
+    }
 }
 @media(max-width:375px){
     .form-wrap {
