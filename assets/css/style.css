@@ -555,3 +555,20 @@ a.buy-now:hover{
     padding: 0 25px;
 }
 /* sub pages css end */
+
+.disclaimer-sec {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .disclaimer-text h4{
+    font-size: 1.5625rem;
+    margin-bottom: 10px;
+    color: #000;
+  
+  }
+  .disclaimer-text p{
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
